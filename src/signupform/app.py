@@ -4,14 +4,16 @@ import os
 import time
 import datacomponents.Data as Data
 import datacomponents.Response as Response
+import displaycomponents.Title as Title
+import displaycomponents.ProgramContext as ProgramContext
 import formcomponents.Email as Email
 import formcomponents.Name as Name
-import formcomponents.Title as Title
 import formcomponents.Selections as Selections
 if __name__ == "__main__":
 	entries = 0
 	running = True
 	title = Title.Title()
+	context = ProgramContext.ProgramContext()
 	name = Name.Name()
 	email = Email.Email()
 	selections = Selections.Selections()
@@ -23,6 +25,8 @@ if __name__ == "__main__":
 		name.inputFirstName()
 		name.inputLastName()
 		email.inputEmailAddress()
+		context.view()
+		time.sleep(2)
 		selections.make()
 		response.format( name.getFirstName(), 
 			             name.getLastName(),

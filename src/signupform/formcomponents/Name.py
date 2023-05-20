@@ -23,9 +23,11 @@ class Name:
 		try:
 			inputtingName = True
 			while inputtingName:
-				firstName = str( input( "> enter your first name: " ) )
+				firstName = str( input( "> first name: " ) )
 				if firstName.strip() == "":
 					print( "blank entries not allowed" )
+				elif firstName.strip().upper() == "STOP":
+					break
 				else:
 					self.setFirstName( firstName )
 					inputtingName = False; break
@@ -35,9 +37,11 @@ class Name:
 		try:
 			inputtingName = True
 			while inputtingName:
-				lastName = str( input( "> enter your last name: " ) )
+				lastName = str( input( "> last ( family ) name: " ) )
 				if lastName.strip() == "":
 					print("blank entries not allowed")
+				elif lastName.strip().upper() == "STOP":
+					break
 				else:
 					self.setLastName( lastName )
 					inputtingName = False; break

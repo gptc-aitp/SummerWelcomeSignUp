@@ -8,7 +8,6 @@ class Data:
 		try:
 			with open( destination, "a+" ) as source:
 				source.write( data + "\n" )
-			return
 		except FileNotFoundError:
 			print( destination, "not found." )
 	def retrive(self, destination ):
@@ -16,6 +15,5 @@ class Data:
 			with open( destination, "r" ) as source:
 				for line in source:
 					source.read( line )
-			return
 		except FileNotFoundError:
 			print( destination, "not found." )

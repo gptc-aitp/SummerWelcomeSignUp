@@ -11,9 +11,9 @@ class Email:
 		self.emailAddress = emailAddress
 	def inputEmailAddress( self ):
 		validEmail = False
-		emailPattern = re.compile( r"([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@([A-Za-z0-9]+(\.[A-Za-z0-9]+)+)" )
+		emailPattern = re.compile( r"([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@student\.gptc\.edu" )
 		while validEmail is False:
-			emailAddress = str( input( "> enter your gptc email: ") )
+			emailAddress = str( input( "> @student.gptc email: ") )
 			if emailAddress.upper() == "QUIT":
 				break
 			if self.emailIsValid( emailAddress, emailPattern ) != False:
@@ -22,13 +22,13 @@ class Email:
 				validEmail = True
 				break
 	def emailIsValid( self, emailAddress, emailPattern ):
-		gptcDomain = "student.gptc.edu"
-		if re.fullmatch( emailPattern, emailAddress ) and gptcDomain in emailAddress:
-			print("valid email")
+		indexAtSymbol = emailAddress.index("@")
+		gptcDomain = "@student.gptc.edu"
+		if re.fullmatch( emailPattern, emailAddress ):
 			return True
 		else:
-			print( "invalid email" )
-			if gptcDomain not in emailAddress:
+			print( "!!invalid email" )
+			if emailAddress[indexAtSymbol+1::] != "student.gptc.edu":
 				print( "email does not contain 'student.gptc.edu'" )
 			return False
 	def view(self):
