@@ -11,5 +11,14 @@ poetry.lock
 # tests
 tests/
 
+# pycache
+__pycache__
+*/__pycache__
+*/*/__pycache__
+*/*/*/__pycache__
+*/*/*/*/__pycache__
+*/*/*/*/*/__pycache__
+*/*/*/*/*/*/__pycache__
+
 # dataout
 dataout/
