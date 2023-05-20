@@ -25,8 +25,9 @@ if __name__ == "__main__":
 		name.inputFirstName()
 		name.inputLastName()
 		email.inputEmailAddress()
-		context.view()
 		time.sleep(2)
+		os.system("clear")
+		context.view()
 		selections.make()
 		response.format( name.getFirstName(), 
 			             name.getLastName(),

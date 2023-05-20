@@ -6,10 +6,12 @@ class Selections:
 	    inquirer.Checkbox( "aitp programming", 
 	    	            message="what aitp programs are you interested in?", 
 	    	            choices= [
-	    	                "JOIN AITP", 
-	    	                "MISION:DATA", 
-	    	                "DESIGN_PREVIEW-SHIP", 
-	    	                "ECHO LOCAL", 
+	    	                "join aitp", 
+	    	                "mision:data", 
+	    	                "design_preview_ship", 
+	    	                "echo local", 
+	    	                "git bash",
+	    	                "azure immersion"
 	    	            ],
 	    	            default=None
 	    	         )
