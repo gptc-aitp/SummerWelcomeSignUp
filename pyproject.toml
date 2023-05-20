@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "signupform"
+version = "0.1.0"
+description = ""
+authors = ["jack l <jlester@student.gptc.edu>"]
+readme = "README.md"
+packages = [{include = "signupform", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+inquirer = "^3.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
