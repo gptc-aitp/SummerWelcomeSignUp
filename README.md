@@ -5,9 +5,9 @@ This python application is to be used during GPTC's Summer Welcome week. The pur
 
 ## Installation
 * Clone the repository
-	- `cd ~ && gh repo clone SignUpForm`
+	- `cd ~ && gh repo clone gptc-aitp/SummerWelcomeSignUp`
 * change into the directory
-	- `cd SignUpForm`
+	- `cd SummerWelcomeSignUp`
 * Install packages
 	- `pip3 install -r requirements.txt`
 * Run the application
