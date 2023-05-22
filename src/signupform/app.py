@@ -1,5 +1,10 @@
 #!/bin/env/python3
-""" app.py """
+""" 
+    @module app.py
+    @author jack l.
+    @date 2023 05 22
+    @purpose module describes application's event loop.
+"""
 import os
 import time
 import datacomponents.Data as Data
@@ -20,6 +25,7 @@ if __name__ == "__main__":
 	response = Response.Response()
 	data = Data.Data()
 	while running:
+		os.system("clear")
 		title.view()
 		print( "entries:", entries )
 		name.inputFirstName()

@@ -1,5 +1,10 @@
 #!/bin/env/python3
-""" ProgramContent.py """
+""" 
+    @module ProgramContext.py
+    @author jack l.
+    @date 2023 05 22
+    @purpose module describes a model for program context.
+"""
 class ProgramContext:
 	_programs = [ 
 	    
@@ -61,8 +66,14 @@ class ProgramContext:
 
 	]
 	def __init__(self):
+		""" constructor """
 		self.programs = self._programs
 	def view(self):
+		"""
+		    @method get
+		    @purpose prints contents of programs to console.
+		    @return void
+		"""
 		print("\naitp programs:")
 		for element in self.programs:
 			print("")
