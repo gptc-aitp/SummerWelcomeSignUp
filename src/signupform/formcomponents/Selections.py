@@ -6,6 +6,7 @@
     @purpose module describes a model for Selections.
 """
 import inquirer
+from inquirer.themes import GreenPassion
 class Selections:
 	_questions = [ 
 	    inquirer.Checkbox( "aitp programming", 
@@ -46,7 +47,7 @@ class Selections:
 		    @return void
 		"""
 		try:
-			selections = inquirer.prompt( self._questions )
+			selections = inquirer.prompt( self._questions, theme=GreenPassion() )
 			self.set( selections )
 			self.view()
 		except Exception:

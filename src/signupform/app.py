@@ -31,7 +31,7 @@ if __name__ == "__main__":
 		name.inputFirstName()
 		name.inputLastName()
 		email.inputEmailAddress()
-		time.sleep(2)
+		time.sleep(1)
 		os.system("clear")
 		context.view()
 		selections.make()
