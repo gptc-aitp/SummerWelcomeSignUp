@@ -36,7 +36,7 @@ class Email:
             validEmail = False
             emailPattern = re.compile( r"([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@student\.gptc\.edu" )
             while validEmail is False:
-                emailAddress = str( input( "> @student.gptc email: ") )
+                emailAddress = str( input( "> gptc email: ") )
                 if emailAddress.upper() == "QUIT":
                     break
                 if self.emailIsValid( emailAddress, emailPattern ) != False:

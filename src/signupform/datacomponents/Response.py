@@ -34,7 +34,7 @@ class Response:
         """
         try:
             joinedSelections = ", ".join( selections[ 'aitp programming' ] )
-            formatted = f"{ firstName }|{lastName }|{ emailAddress }|{ joinedSelections }"
+            formatted = f"{ firstName },{lastName },{ emailAddress },[{ joinedSelections }]"
             self.set( formatted )
         except Exception:
-            print( "an exception has occured." )
+            print( "an exception has occurred." )

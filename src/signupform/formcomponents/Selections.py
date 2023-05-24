@@ -13,10 +13,9 @@ class Selections:
 	    	            message="what aitp programs are you interested in?", 
 	    	            choices= [
 	    	                "join aitp", 
-	    	                "mision:data", 
+	    	                "mission:data", 
 	    	                "design_preview_ship", 
 	    	                "echo local", 
-	    	                "git bash",
 	    	                "azure immersion"
 	    	            ],
 	    	            default=None

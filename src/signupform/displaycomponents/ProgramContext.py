@@ -11,8 +11,7 @@ class ProgramContext:
 	    { 
 	        "program":  "join aitp",  
 	        "description": [
-	             "this is how you become a member.",
-	             "help boost aitp member quality, engagement.",
+	             "become a member.",
 	             "we do coffee && tea"
 	        ],
 	    },
@@ -20,7 +19,7 @@ class ProgramContext:
 	    {
 	        "program": "mission:data",
 	        "description": [
-	            "hands-on series on the acquisition, reflection, and re-deployment of personal meta data created by users for social media platforms.",
+	            "learn about data you created on social media platforms.",
 	            "goal: meet meta you"
 	        ],
 	        
@@ -29,9 +28,7 @@ class ProgramContext:
 	    {
 	        "program": "echo local",
 	        "description": [
-	            "a series of short session on using the computer's terminal ( or shell )",
-	            "workshop sprint",
-	            "introduces the command-line",
+	            "short session on using your computer's terminal ( or shell )",
 	            "a power-up to your computing experience"
 	        ],
 	    },
@@ -39,17 +36,8 @@ class ProgramContext:
 	    {
 	        "program": "design_preview_ship",
 	        "description": [
-	            "a platform to launch emerging entities within the information technology space.",
+	            "platform to launch emerging entities within the information technology space.",
 	            "aitp's emerging ventures lab.",
-	            "we fund, design, and develop real-world new-business prototypes."
-	            ],
-	    },
-
-	    {
-	        "program": "git bash",
-	        "description": [
-	            "on-boards those interested in directly contributing to open aitp projects.",
-	            "introduces at least the basics of git ( enough to begin being active )",
 	            "we fund, design, and develop real-world new-business prototypes."
 	            ],
 	    },
@@ -58,7 +46,6 @@ class ProgramContext:
 	        "program": "azure immersion",
 	        "description": [
 	            "gain enterprise skills via learning microsoft azure.",
-	            "available to aitp members and gptc students.",
 	            "hosted by advisor nguyen"
 	            ],
 	    },
@@ -74,10 +61,10 @@ class ProgramContext:
 		    @purpose prints contents of programs to console.
 		    @return void
 		"""
-		print("\naitp programs:")
+		print("\n---- aitp programs ---- ")
 		for element in self.programs:
 			print("")
-			print( element['program'] )
+			print( element['program'].upper() )
 			for desc in element['description']:
-				print(f"+ { desc }" )
+				print(f"> { desc }" )
 		print("\n")

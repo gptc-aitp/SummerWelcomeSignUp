@@ -27,13 +27,14 @@ if __name__ == "__main__":
 	while running:
 		os.system("clear")
 		title.view()
-		print( "entries:", entries )
+		context.view()
+		# print( "entries:", entries )
 		name.inputFirstName()
 		name.inputLastName()
 		email.inputEmailAddress()
 		time.sleep(1)
 		os.system("clear")
-		context.view()
+		# context.view()
 		selections.make()
 		response.format( name.getFirstName(), 
 			             name.getLastName(),

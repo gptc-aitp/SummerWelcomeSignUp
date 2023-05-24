@@ -13,5 +13,6 @@ class Title:
 		for instruction in self.instructions:
 			print(f"> { instruction }")
 		print( "----------------------------------------------------------------\n" )
+		return
 	def view(self):
-		print(self.create())
+		print( self.create() )
